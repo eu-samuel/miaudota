@@ -1,15 +1,15 @@
 import { Header } from "../../components/header/header";
 import React from "react";
-import { HomeContainer } from "./style";
+import { DonateContainer } from "./style";
 import { DefaultPageStyle } from "../../assets/generalStyles";
 import { ChakraProvider } from "@chakra-ui/react";
-import Post1 from './../../assets/UI/Post1';
-import Post2 from './../../assets/UI/Post2';
-import Post3 from './../../assets/UI/Post3';
+import Post1 from '../../assets/UI/Post1';
+import Post2 from '../../assets/UI/Post2';
+import Post3 from '../../assets/UI/Post3';
 import { useNavigate } from "react-router-dom";
 import { goToAbout } from "../../routes/coordinator";
 
-export const HomePage = () => {
+export const DonatePage = () => {
 
   const navigate = useNavigate()
 
@@ -17,7 +17,7 @@ export const HomePage = () => {
     <ChakraProvider>
       <Header/>
       <DefaultPageStyle>
-        <HomeContainer>
+        <DonateContainer>
             <div className="posts">
                 <div id="post"  onClick={() => goToAbout(navigate)}>
                     <Post1/>
@@ -29,7 +29,7 @@ export const HomePage = () => {
                   <Post3/>
                 </div>
           </div>
-        </HomeContainer>
+        </DonateContainer>
       </DefaultPageStyle>
     </ChakraProvider>
   );

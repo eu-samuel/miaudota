@@ -1,38 +1,43 @@
 import { StyledColumn, StyledList } from "./styledColumn";
+import { useNavigate } from "react-router-dom";
+import { goToAbout, goToAdopt, goToFaq, goToContact, goToDonate } from "../../routes/coordinator";
 
 export const Column = () => {
+
+  const navigate = useNavigate()
+
   return (
     <StyledColumn>
       <StyledList>
         <li>
-          <button>
+        <button onClick={() => goToAdopt(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/FzGxQmd/nav1.png" />
             Adote Agora
           </button>
         </li>
 
         <li>
-          <button>
+        <button onClick={() => goToDonate(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/3mRxXjm/nav2.png" />
-            Apadrinhe
+            Contribua
           </button>
         </li>
 
         <li>
-          <button>
+        <button onClick={() => goToAbout(navigate)}>
+            <img id="nav-img" src="https://i.ibb.co/sJXxnFx/nav3.png" />
+            Sobre nós
+          </button>
+        </li>
+        <li>
+        <button onClick={() => goToContact(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/25x2hdH/nav4.png" />
             Fale Conosco
           </button>
         </li>
         <li>
-          <button>
+        <button onClick={() => goToFaq(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/VLyQH1M/nav5.png" />
-            Blog
-          </button>
-        </li>
-        <li>
-          <button>
-            <img id="nav-img" src="https://i.ibb.co/NY0WmVf/nav6.png" />
             FAQ
           </button>
         </li>
@@ -44,9 +49,6 @@ export const Column = () => {
         <img id="icon" src="https://i.ibb.co/gFq4VFG/catwitter.png"/>
         <img id="icon" src="https://i.ibb.co/zXkVqbz/catmail.png"/>
         </div>
-        <span>Ícones por <a href="https://www.deviantart.com/therealflamecat/gallery">@TheRealFlameCat</a></span>
-
-        <p>Rio de Janeiro - RJ.</p>
     </StyledColumn>
   );
 };

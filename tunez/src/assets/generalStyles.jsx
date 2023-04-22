@@ -1,37 +1,38 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    width: 81vw;
+    max-width: 85vw;
     position: absolute;
     top: 0vh;
     display: flex;
     align-items: center;
-    gap: 16.5vw;
+    gap: 4vw;
     left: 15vw;
-    height: 5vh;
-    padding-left: 8vh;
-    padding-top: 2vh;
+    height: 7vh;
+    padding: 0 0 .5vh 6vw;
     box-shadow: 0px 1px 0px 0px rgba(191, 188, 188, 0.45); 
-    #logo, span, button{
-        position: relative;
-    }
-    
+
     #logo{
-        top: -1.1vh;
         width: 20%;
+        transition: 200ms;
+        cursor: pointer;
+        :active{transform: scale(0.98);}
     }
  
     span{
-        left: -17vw;
-        top: .8vh;
         font-size: 13px;
+        max-width: 30vw;
+        margin-top: 3vh;
+        position: relative;
+        right: 4vw;
         font-family: "Poppins", 'Montserrat', sans-serif;
         font-weight: 700;
         }
 
-    button{
-        top: -.8vh;
-    }
+        .dark-btn{
+            position: relative;
+            right: 2vw;
+        }
 `
 
 export const DefaultPageStyle = styled.section`
