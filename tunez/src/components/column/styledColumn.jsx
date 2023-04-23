@@ -18,7 +18,7 @@ export const StyledColumn = styled.section`
         align-items: center;
         justify-content: center;
         #icon{
-            width: 16%;
+            width: 15%;
             cursor: pointer;
             :active{
                 transform: scale(0.95);
@@ -42,7 +42,7 @@ export const StyledColumn = styled.section`
     h2{
         font-family: "Poppins", "Montserrat", sans-serif;
         font-size: 20px;
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
 
 `
@@ -52,10 +52,10 @@ export const StyledList = styled.ul`
     list-style: none;
     position: relative;
     left: -.3vw;
-    margin-top: 10vh;
+    margin-top: 7vh;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 4.5vh;
 
     img{
         width: 23%;
@@ -82,7 +82,7 @@ export const StyledList = styled.ul`
         cursor: pointer;
         transition: 150ms;
         :hover{
-            width: 19vw;
+            width: 18vw;
         }
         :active{
             transform: scale(0.98);

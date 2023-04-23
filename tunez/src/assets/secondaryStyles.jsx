@@ -43,36 +43,6 @@ export const HeaderButton = styled.button`
 
 `
 
-export const FormButton = styled.button`
-    
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    background-color: ${props => props.bg};
-    color: ${props => props.textcolor};
-    font-size: 14px;
-    width: 7vw;
-    height: 2vh;
-    padding: 1rem .5rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: solid 1px ${props => props.bordercolor};
-    border-radius: 3px;
-    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.3);
-    transition: 150ms;
-
-    cursor: pointer;
-    :hover{
-        background-color: ${props => props.color};
-        color: white;
-    }
-    :active{
-        transform: scale(0.95);
-    }
-
-`
-
 export const StyledBalloon = styled.div`
     
     .balloon-on {
@@ -153,65 +123,5 @@ export const StyledCard = styled.div`
     #text{
         color: ${props => props.textcolor};
         width: 20vw;
-    }
-`
-
-export const StyledForm = styled.form`
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-    position: relative;
-    top: -1vh;
-    padding-top: 5vh;
-
-    #logo{
-        width: 10vw;
-    }
-
-    label{
-        display: flex;
-        font-size: 15px;
-        gap: 1vw;
-        font-weight: 600;
-    }
-
-    .buttons{
-        display: flex;
-        align-items: center;
-        gap: 1vw;
-        position: relative;
-        top: -1vh;
-    }
-
-    p{
-        cursor: pointer;
-        font-weight: 700;
-        :hover{
-            text-decoration: underline;
-        }
-    }
-    
-    .newsletter{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        span{
-            position: relative;
-            top: -1.3vh;
-            left: .5vw;
-        }
-    }
-
-    #btn{
-        border-radius: 20px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        :active{
-            transform: scale(0.98);
-        }
     }
 `

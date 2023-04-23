@@ -1,6 +1,6 @@
 import { StyledColumn, StyledList } from "./styledColumn";
 import { useNavigate } from "react-router-dom";
-import { goToAbout, goToAdopt, goToFaq, goToContact, goToDonate } from "../../routes/coordinator";
+import { goToHome, goToAbout, goToAdopt, goToFaq, goToContact, goToDonate } from "../../routes/coordinator";
 
 export const Column = () => {
 
@@ -9,6 +9,14 @@ export const Column = () => {
   return (
     <StyledColumn>
       <StyledList>
+
+      <li>
+        <button onClick={() => goToHome(navigate)}>
+            <img id="nav-img" src="https://i.ibb.co/Dw786kN/nav0.png" />
+            Principal
+          </button>
+        </li>
+
         <li>
         <button onClick={() => goToAdopt(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/FzGxQmd/nav1.png" />
@@ -47,7 +55,6 @@ export const Column = () => {
         <img id="icon" src="https://i.ibb.co/sCRgMwm/catagram.png"/>
         <img id="icon" src="https://i.ibb.co/gS4b575/catbook.png"/>
         <img id="icon" src="https://i.ibb.co/gFq4VFG/catwitter.png"/>
-        <img id="icon" src="https://i.ibb.co/zXkVqbz/catmail.png"/>
         </div>
         <span>Ícones por <a href="https://www.deviantart.com/therealflamecat/gallery">@TheRealFlameCat</a></span>
         <span>Projeto criado por Samuel Pereira.</span>

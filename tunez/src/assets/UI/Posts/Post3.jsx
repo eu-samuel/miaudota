@@ -1,4 +1,4 @@
-import { StyledCard } from "../secondaryStyles";
+import { StyledCard } from "../../secondaryStyles";
 import { useColorModeValue } from "@chakra-ui/react";
 
 export default function Post3() {

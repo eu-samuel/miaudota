@@ -1,4 +1,4 @@
-import { StyledForm } from "../secondaryStyles";
+import { HeaderForm } from "./StyledForms";
 
 import {
   Box,
@@ -10,15 +10,26 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-export const LoginForm = (props) => {
+export const RegisterForm = (props) => {
   const [ password, name, email, confirm, onChange, postData, passType, setPassType, setFormType] = props.formStates;
 
   return (
-    <StyledForm>
+    <HeaderForm>
       <img id="logo" src={useColorModeValue("https://i.ibb.co/8gvTTxF/logo.png","https://i.ibb.co/xMMfcCh/logo2.png")}/>
-
       <Box rounded={"lg"} p={4}>
         <Stack spacing={4}>
+          <FormControl id="name">
+            <FormLabel>Nome completo:</FormLabel>
+
+            <Input
+              name="name"
+              id="name"
+              type="text"
+              value={name}
+              onChange={onChange}
+              required/>
+          </FormControl>
+
           <FormControl id="email">
             <FormLabel>E-mail:</FormLabel>
 
@@ -28,8 +39,7 @@ export const LoginForm = (props) => {
               type="email"
               value={email}
               onChange={onChange}
-              required
-            />
+              required/>
           </FormControl>
 
           <FormControl id="password">
@@ -42,43 +52,44 @@ export const LoginForm = (props) => {
               value={password}
               onChange={onChange}
               minLength={8}
-              required
-            />
+              required/>
+            </FormControl>
+
+            <FormControl id="confirm">
+            <FormLabel>Confirme a senha:</FormLabel>
+
+            <Input
+              name="confirm"
+              id="confirm"
+              type={passType}
+              value={confirm}
+              onChange={onChange}
+              minLength={8}
+              required/>
           </FormControl>
 
+          <div className="newsletter"><input type="checkbox"/> <span>Quero receber novidades em meu e-mail.</span></div>
           <Stack spacing={3}>
             <Stack
               direction={{ base: "column", sm: "row" }}
               align={"start"}
               justify={"space-between"}></Stack>
-            <div className="buttons">
+            <div className="reg-buttons">
               <Button
                 type="submit"
                 id="btn"
-                bg={"blue.500"}
+                bg={"green.500"}
                 color={"white"}
-                w={'6vw'}
                 _hover={{
-                  bg: "blue.600",
+                  bg: "green.600",
                 }}>
-                Entrar
+                Finalizar cadastro
               </Button>
-              <Button
-                type="button"
-                id="btn"
-                bg={"purple.500"}
-                w={'7vw'}
-                color={"white"}
-                _hover={{
-                  bg: "purple.600",
-                }}
-                onClick={() => setFormType("register")}>
-                Cadastre-se
-              </Button>
+              <p onClick={() => setFormType("login")}>Possuo conta</p>
             </div>
           </Stack>
         </Stack>
       </Box>
-    </StyledForm>
+    </HeaderForm>
   );
 };

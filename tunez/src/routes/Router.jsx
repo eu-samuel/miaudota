@@ -6,7 +6,6 @@ import { AboutPage } from "../pages/aboutpage/aboutpage";
 import { ContactPage } from "../pages/contactpage/contactpage";
 import { FaqPage } from "../pages/faqpage/faqpage";
 import { Column } from "../components/column/column"
-import { useNavigate } from "react-router-dom";
 
 export const Router = () => {
 
