@@ -7,7 +7,6 @@ import Post1 from '../../assets/UI/Posts/Post1';
 import Post2 from '../../assets/UI/Posts/Post2';
 import Post3 from '../../assets/UI/Posts/Post3';
 import { useNavigate } from "react-router-dom";
-import { goToAbout } from "../../routes/coordinator";
 
 export const HomePage = () => {
 
@@ -19,7 +18,7 @@ export const HomePage = () => {
       <DefaultPageStyle>
         <HomeContainer>
             <div className="posts">
-                <div id="post"  onClick={() => goToAbout(navigate)}>
+                <div id="post">
                     <Post1/>
                 </div>
                 <div id="post">

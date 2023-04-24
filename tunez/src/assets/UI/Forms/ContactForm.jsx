@@ -7,6 +7,7 @@ import {
   Text,
   Button,
   VStack,
+  Select,
   Wrap,
   WrapItem,
   FormControl,
@@ -31,9 +32,9 @@ export default function Contact() {
         color="black"
         borderRadius="lg"
         m={{ sm: 4, md: 16, lg: 10 }}
-        p={{ sm: 5, md: 5, lg: 16 }}
+        p={{ sm: 5, md: 5, lg: 26 }}
       >
-        <Box p={4}>
+        <Box p={2}>
           <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
             <WrapItem>
               <Box>
@@ -52,7 +53,7 @@ export default function Contact() {
                       variant="ghost"
                       color={useColorModeValue("black", 'white')}
                       _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<RiWhatsappFill color="#2a6071" size="20px" />}
+                      leftIcon={<RiWhatsappFill color="#f35f29" size="20px" />}
                     >
                      (21) 99999-9999
                     </Button>
@@ -63,7 +64,7 @@ export default function Contact() {
                       variant="ghost"
                       color={useColorModeValue("black", 'white')}
                       _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<MdIcons.MdEmail color="#2a6071" size="20px" />}
+                      leftIcon={<MdIcons.MdEmail color="#f35f29" size="20px" />}
                     >
                       miaudota@email.com
                     </Button>
@@ -74,7 +75,7 @@ export default function Contact() {
                       variant="ghost"
                       color={useColorModeValue("black", 'white')}
                       _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<MdIcons.MdLocationOn color="#2a6071" size="20px" />}
+                      leftIcon={<MdIcons.MdLocationOn color="#f35f29" size="20px" />}
                     >
                       Rio de Janeiro - RJ
                     </Button>
@@ -110,19 +111,20 @@ export default function Contact() {
                     </FormControl>
                     <FormControl id="name">
                       <FormLabel>Assunto</FormLabel>
-                      <select>
+                      <Select
+                        h={7}>
                         <option value="null">Escolha um assunto</option>
-                        <option value="reclamação">Reclamação</option>
-                        <option value="resgate">Resgates</option>
-                        <option value="informação">Informação geral</option>
-                        <option value="denúncia">Denúncia</option>
-                      </select>
+                        <option value="reclamação">Voluntariado (deixar telefone para contato)</option>
+                        <option value="resgate">Contribuições</option>
+                        <option value="informação">Reclamações</option>
+                        <option value="denúncia">Denúncias</option>
+                      </Select>
                     </FormControl>
                     <FormControl id="name">
                       <FormLabel>Mensagem</FormLabel>
                       <Textarea
                         borderColor="gray.300"
-                        h="11vh"
+                        h="20vh"
                         w="22vw"
                         _hover={{
                           borderRadius: "gray.300",
@@ -133,7 +135,7 @@ export default function Contact() {
                     <FormControl id="name" float="right">
                       <Button
                         variant="solid"
-                        bg="#2a6071"
+                        bg="#f35f29"
                         color="white"
                         _hover={{}}
                       >

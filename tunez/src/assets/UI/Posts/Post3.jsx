@@ -1,7 +1,11 @@
 import { StyledCard } from "../../secondaryStyles";
 import { useColorModeValue } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
+import { goToFaq } from "../../../routes/coordinator";
 
 export default function Post3() {
+  const navigate = useNavigate()
+
   return (
     <StyledCard
     color={useColorModeValue('white', 'gray.900')}
@@ -13,7 +17,8 @@ export default function Post3() {
     <p id="title">Políticas de adoção.</p>
     
     <p id="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      </p></div>
+      </p><span onClick={() => goToFaq(navigate)}>Saiba mais</span>
+      </div>
     </StyledCard>
   );
 }

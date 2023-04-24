@@ -29,7 +29,7 @@ export const AboutContainer = styled.div`
         display: flex;
         flex-direction: column;
         gap: 2vh;
-        margin-top: 6vh;
+        margin-top: 4vh;
     }
 
     article{
@@ -43,6 +43,7 @@ export const AboutContainer = styled.div`
     .stats{
         position: relative;
         top: -4vh;
+        text-align: center;
     }
 
 `

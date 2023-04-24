@@ -15,4 +15,12 @@ export const HomeContainer = styled.div`
         grid-template-columns: repeat(3, 1fr);
     }
 
+    span{
+        text-align: right;
+        font-weight: 700;
+        color: #d72f8b;
+        cursor: pointer;
+        :hover{text-decoration: underline}
+    }
+
 `

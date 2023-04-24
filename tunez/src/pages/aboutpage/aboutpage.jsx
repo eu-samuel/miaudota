@@ -28,7 +28,7 @@ export const AboutPage = () => {
           </div>
           <div className="main-img">
           <img id ="collage" src="https://i.ibb.co/G2qXWDH/collage.png"/>
-        <p>A MiauDota funciona através de diversos protetores, que fornecem abrigos em seus lares.</p>
+        <p>A MiauDota funciona através de diversas pessoas voluntárias, que fornecem lares temporários aos animais.</p>
         </div>
         </div>
         <div className="stats">
