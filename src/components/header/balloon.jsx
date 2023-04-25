@@ -1,10 +1,10 @@
-import { StyledBalloon } from "../../assets/secondaryStyles";
+import { StyledBalloon } from "../../styles/secondaryStyles";
 import { useColorModeValue } from "@chakra-ui/react";
 import axios from "axios";
 import useForm from "./../../hooks/useForm";
 import { useState } from "react";
-import { LoginForm } from "../../assets/UI/Forms/LoginForm";
-import { RegisterForm } from "../../assets/UI/Forms/RegisterForm";
+import { LoginForm } from "../../components/UI/Forms/LoginForm";
+import { RegisterForm } from "../../components/UI/Forms/RegisterForm";
 
 export const Balloon = (props) => {
   const [passType, setPassType] = useState("password");

@@ -1,7 +1,7 @@
-import { StyledHeader } from "../../assets/generalStyles"
-import { HeaderButton } from "../../assets/secondaryStyles"
+import { StyledHeader } from "../../styles/generalStyles"
+import { HeaderButton } from "../../styles/secondaryStyles"
 import { useState } from "react"
-import DarkModeButton from "../../assets/UI/DarkButton"
+import DarkModeButton from "../../components/UI/DarkButton"
 import { useColorModeValue } from '@chakra-ui/react';
 import { Balloon } from "./balloon";
 import { goToHome } from "../../routes/coordinator";

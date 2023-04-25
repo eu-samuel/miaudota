@@ -1,11 +1,11 @@
 import { Header } from "../../components/header/header";
 import React from "react";
 import { HomeContainer } from "./style";
-import { DefaultPageStyle } from "../../assets/generalStyles";
+import { DefaultPageStyle } from "../../styles/generalStyles";
 import { ChakraProvider } from "@chakra-ui/react";
-import Post1 from '../../assets/UI/Posts/Post1';
-import Post2 from '../../assets/UI/Posts/Post2';
-import Post3 from '../../assets/UI/Posts/Post3';
+import Post1 from '../../components/UI/Posts/Post1';
+import Post2 from '../../components/UI/Posts/Post2';
+import Post3 from '../../components/UI/Posts/Post3';
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {

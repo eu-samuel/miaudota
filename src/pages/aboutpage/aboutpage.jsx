@@ -1,9 +1,9 @@
 import { Header } from "../../components/header/header";
 import React from "react";
 import { AboutContainer } from "./style";
-import { DefaultPageStyle } from "../../assets/generalStyles";
+import { DefaultPageStyle } from "../../styles/generalStyles";
 import { ChakraProvider } from "@chakra-ui/react";
-import BasicStatistics from "../../assets/UI/Others/Stats";
+import BasicStatistics from "../../components/UI/Others/Stats";
 
 export const AboutPage = () => {
   return (
