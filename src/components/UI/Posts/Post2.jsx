@@ -13,7 +13,7 @@ export default function Post2() {
     boxcolor={useColorModeValue('#e8e6e7', '#151b25')}>
     <img src="https://i.ibb.co/rmWhGRz/post2.png"/>
     <div className="container">
-    <p id="tag">CONTRIBUA</p>
+    <p id="tag">Doações</p>
     <p id="title">Sua doação é importante!</p>
     
     <p id="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.

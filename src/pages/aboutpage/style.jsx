@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 
-    width: 84vw;  
+    width: 85vw;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 3vh 3vw 0 3vw;
     
     .main{
         display: flex;
+        position: relative;
         gap: 2vw;
     }
 
     .main-img{
         position: relative;
-        top: 8vh;
+        top: 3vh;
         img{
             max-width: 40vw;
         }
@@ -42,7 +44,7 @@ export const AboutContainer = styled.div`
 
     .stats{
         position: relative;
-        top: -4vh;
+        top: -6vh;
         text-align: center;
     }
 

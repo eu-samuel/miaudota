@@ -43,17 +43,9 @@ export const FaqPage = () => {
                 <article>
                   <p>
                     Em seu termo de adoção, nos comprometemos a entregar o
-                    animal com no mínimo a primeira dose da vacina B10. Ele 
-                    estará protegido contra parasitas e pulgas também mas, ao 
-                    fim da eficácia das doses, é de sua responsabilidade.
-                  </p>
-                  <br/>
-                  <p>
-                    No entanto, assim que seu gatinho completar cinco meses,
-                    oferecemos a castração gratuita dele em postos conveniados 
-                    sob o acompnhamento de uma de nossas pessoas voluntárias. 
-                    A MiauDota não te entregará nenhum animal acima dos cinco meses 
-                    que não esteja castrado.
+                    animal vacinado com a primeira dose. Ele estará protegido contra parasitas também mas, 
+                    ao fim da eficácia das doses, é de sua responsabilidade. Assim que seu gatinho completar cinco meses,
+                    oferecemos a castração gratuita sob o acompnhamento de uma de nossas pessoas voluntárias. 
                   </p>
                 </article>
               </div>
@@ -105,14 +97,6 @@ export const FaqPage = () => {
                     espaços aonde os gatos habitam. A fim de evitar qualquer mau
                     entendido ou atrito desnecessário, a MiauDota presta contas
                     de todo tipo de material comprado com verba doada.
-                  </p>
-                  <br/>
-                  <p>
-                    Enviamos os comprovantes fiscais para a pessoa contribuidora
-                    em seu e-mail do que foi adquirido através de seu apoio a
-                    nosso grupo. A MiauDota não utiliza o dinheiro doado para
-                    pagar alimentação ou transporte de nossas pessoas
-                    voluntárias.
                   </p>
                 </article>
               </div>

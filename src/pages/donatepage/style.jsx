@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DonateContainer = styled.div`
 
-    width: 84vw;  
+    width: 85vw;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,17 +18,29 @@ export const DonateContainer = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 10vw;
-        gap: 2vw;
+        gap: 5vw;
     }
 
-    .box{
-        width: 25vw;
+    .banks{
         display: flex;
-        padding-top: 4vh;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        #bank-data{
+            text-align: left;
+        }
+    }
+
+    .box{   
+        position: relative;
+        top: 3vh;
+        width: 35vw;
+        display: flex;
+        padding-top: 3vh;
         text-align: center;
         flex-direction: column;
         gap: 1vw;
-        height: 53vh;
+        height: 34vh;
         background-color: #eeeeee;
         h1{
             font-weight: 600;
@@ -39,13 +51,13 @@ export const DonateContainer = styled.div`
     #cat-donate{
         position: relative;
         top: -4vh;
-        width: 80%;
+        width: 70%;
     }
 
     #postal{
         display: flex;
         flex-direction: column;
-        gap: 2vh;
+        gap: 1vh;
     }
 
     #text{

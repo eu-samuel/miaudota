@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AdoptContainer = styled.div`
 
-    width: 84vw;  
+    width: 85vw;    
     display: flex;
     align-items: center;
     justify-content: center;

@@ -59,7 +59,7 @@ export const StyledBalloon = styled.div`
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 59vw;
+        left: 61vw;
         top: 7vh;
         z-index: 1;
         transition: 200ms;
@@ -76,10 +76,11 @@ export const StyledBalloon = styled.div`
         height: 0vh;
         color: white;
         display: flex;
+        visibility: hidden;
         flex-direction: column;
         opacity: 0;
         position: absolute;
-        left: 59vw;
+        left: 61vw;
         top: 7vh;
         z-index: 1;
         transition: 200ms;

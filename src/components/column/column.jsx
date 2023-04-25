@@ -27,7 +27,7 @@ export const Column = () => {
         <li>
         <button onClick={() => goToDonate(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/3mRxXjm/nav2.png" />
-            Contribua
+            Doações
           </button>
         </li>
 

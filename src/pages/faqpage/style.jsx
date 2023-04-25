@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const FaqContainer = styled.div`
 
-    width: 84vw;  
+    width: 85vw;  
     display:flex;
     flex-direction: column;
     margin: 3vh 0 0 5vw;
     gap: 5vh;
     justify-content: center;
+    padding-bottom: 5vh;
     
     h1{
             font-size: 40px;
@@ -27,6 +28,7 @@ export const FaqContainer = styled.div`
         grid-template-columns: 1fr 1fr;
         width: 60vw;
         gap: 5vw;
+        height: 50vh;
 
         span{
             font-weight: 700;

@@ -19,6 +19,7 @@ export const DonatePage = () => {
           <div className="container">
           <div className="box">
             <h1>Para doações em dinheiro:</h1>
+          <div className="banks">
           <div id="bank-data">
           <h2>Itaú:</h2>
             <p>Agência: 9999</p>
@@ -31,11 +32,11 @@ export const DonatePage = () => {
             <p>Conta: 013 12345678-9</p>
             <p>Pix: miaudota2@email.com</p>
             </div>
+            </div>
           <div id="postal">
-            <h1>Para doações de ração e produtos:</h1>
+            <h1>Caixa postal:</h1>
           <article><p>Samuel Pereira </p>
-            <p>Rua Lorem Ipsum, 99</p>
-            <p>Rio de Janeiro - RJ</p>
+            <p>Rua Lorem Ipsum, 99. Rio de Janeiro - RJ</p>
             <p> 21999-999</p>
             </article>
             </div>

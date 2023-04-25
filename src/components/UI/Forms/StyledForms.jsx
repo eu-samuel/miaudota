@@ -66,12 +66,12 @@ export const HeaderForm = styled.form`
 export const ContactForm = styled.form`
     
     .box{
-        margin-top: 12vh;
+        margin-top: 6vh;
         display: flex;
         flex-direction: row;
         border: solid 1px #E2E1E1;
         width: 80vw;
-        max-height: 65vh;
+        height: 75vh;
         #catcontact{
             position: absolute;
             max-width: 23vw;

@@ -3,7 +3,6 @@ import React from "react";
 import { AboutContainer } from "./style";
 import { DefaultPageStyle } from "../../styles/generalStyles";
 import { ChakraProvider } from "@chakra-ui/react";
-import BasicStatistics from "../../components/UI/Others/Stats";
 
 export const AboutPage = () => {
   return (
@@ -23,8 +22,8 @@ export const AboutPage = () => {
             </article>
 
             <article>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis aperiam veniam inventore laboriosam dolores! Modi, eligendi rem consectetur magnam molestias beatae voluptate similique itaque facilis eius dolor ipsum! Saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam dolorum ab minima cum sed at unde, totam hic nemo architecto ullam repellat impedit ipsa beatae magni eligendi praesentium id maiores? Lorem ipsum dolor facilis tempora.
-            </article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis aperiam veniam inventore laboriosam dolores! Modi, eligendi rem consectetur magnam molestias beatae voluptate similique itaque facilis eius dolor ipsum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit delectus sunt molestias qui odio. Soluta quam voluptates blanditiis! Architecto dolorum perferendis cupiditate animi consectetur. Officiis iste et doloribus tempora possimus!</article>
           </div>
           <div className="main-img">
           <img id ="collage" src="https://i.ibb.co/G2qXWDH/collage.png"/>
@@ -32,7 +31,6 @@ export const AboutPage = () => {
         </div>
         </div>
         <div className="stats">
-        <BasicStatistics/>
         </div>
         </AboutContainer>
       </DefaultPageStyle>

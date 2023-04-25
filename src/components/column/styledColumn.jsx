@@ -7,12 +7,12 @@ export const StyledColumn = styled.section`
     color: white;
     text-align: center;
     width: 15vw;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(#2a215a, #0c504d);
 
     .social-media{
         display: flex;
-        padding: 5vh 0 2vh 0;
+        padding: 3vh 0 2vh 0;
         gap: 1vw;
         height: 2vh;
         align-items: center;
@@ -28,7 +28,7 @@ export const StyledColumn = styled.section`
 
     span{
         position: relative;
-        top: 3vh;
+        top: 2vh;
         font-size: 12px;
     }
 
