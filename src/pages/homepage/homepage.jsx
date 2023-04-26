@@ -2,15 +2,11 @@ import { Header } from "../../components/header/header";
 import React from "react";
 import { HomeContainer } from "./style";
 import { DefaultPageStyle } from "../../styles/generalStyles";
+import { Posts } from "../../components/Posts";
+import HomeCard from "../../components/UI/Cards/HomeCard";
 import { ChakraProvider } from "@chakra-ui/react";
-import Post1 from '../../components/UI/Posts/Post1';
-import Post2 from '../../components/UI/Posts/Post2';
-import Post3 from '../../components/UI/Posts/Post3';
-import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
-
-  const navigate = useNavigate()
 
   return (
     <ChakraProvider>
@@ -18,15 +14,23 @@ export const HomePage = () => {
       <DefaultPageStyle>
         <HomeContainer>
             <div className="posts">
+              {Posts.map((post) => {
+                return(
+                  <>
                 <div id="post">
-                    <Post1/>
+                  <HomeCard
+                  image={post.image}
+                  tag={post.tag}
+                  key={post.tag}
+                  text={post.text}
+                  route={post.route}
+                  title={post.title}
+                  />
                 </div>
-                <div id="post">
-                    <Post2 />
-                </div>
-                <div id="post">
-                  <Post3/>
-                </div>
+                  </>
+                )
+              })}
+
           </div>
         </HomeContainer>
       </DefaultPageStyle>

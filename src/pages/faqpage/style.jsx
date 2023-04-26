@@ -6,6 +6,7 @@ export const FaqContainer = styled.div`
     display:flex;
     flex-direction: column;
     margin: 3vh 0 0 5vw;
+    font-size: 15px;
     gap: 5vh;
     justify-content: center;
     padding-bottom: 5vh;

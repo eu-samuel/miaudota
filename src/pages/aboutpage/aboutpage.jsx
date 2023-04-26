@@ -14,16 +14,23 @@ export const AboutPage = () => {
         <div className="article">
         <h1>O que é a MiauDota?</h1>
           <article>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta corrupti, facere animi recusandae ut, magni porro quam aliquid optio libero nulla asperiores architecto nihil eos sit exercitationem unde, ex iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta voluptatum, perspiciatis est quibusdam odit iste provident ipsam, suscipit laborum quos possimus totam labore aspernatur quas mollitia porro et nostrum!
+          MiauDota é uma organização sem fins lucrativos voltada para a causa animal, tendo sua sede localizada no centro da cidade do Rio de Janeiro. 
+          Nosso trabalho é centralizado nos cuidados de abrigar, resgatar e disponibilizar para adoção gatos em situação de rua, abandono e maus tratos.
           </article>
           
           <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia possimus illum reiciendis assumenda ad facere recusandae sit similique velit accusantium iure alias cupiditate magnam eius veniam, doloribus ducimus quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus harum, quo consectetur facilis illo aut, porro et voluptate cum sequi itaque culpa quisquam rerum eos quaerat eaque non, odit expedita.
+            Hoje, temos em nosso quadro cerca de 35 pessoas voluntárias, famílias inteiras que se doam por uma caracterísica em comum: o forte senso de justiça por aqueles
+            que não conseguem compreender como nosso mundo funciona. A quantidade de gatos sob nossos cuidados até a presente data é de cerca de 220 a 240 animais.
+            </article>
+            
+            <article>
+            Nossa sede funciona como uma espécie de abrigo, concentrando os gatos da região do centro e áreas próximas. Além disso, atuamos através de grandes lares temporários,
+            disponibilizados por nossa equipe de pessoas voluntárias e espalhados por toda a cidade e outros municípios da baixada fluminense.
             </article>
 
             <article>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis aperiam veniam inventore laboriosam dolores! Modi, eligendi rem consectetur magnam molestias beatae voluptate similique itaque facilis eius dolor ipsum!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit delectus sunt molestias qui odio. Soluta quam voluptates blanditiis! Architecto dolorum perferendis cupiditate animi consectetur. Officiis iste et doloribus tempora possimus!</article>
+            Fornecemos todo o auxílio possível para que nossas pessoas voluntárias consigam seguir em frente com os lares. No entanto, contamos com doações como forma de contribuir com o sucesso do nosso trabalho.
+            </article>
           </div>
           <div className="main-img">
           <img id ="collage" src="https://i.ibb.co/G2qXWDH/collage.png"/>

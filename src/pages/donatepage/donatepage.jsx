@@ -36,8 +36,8 @@ export const DonatePage = () => {
           <div id="postal">
             <h1>Caixa postal:</h1>
           <article><p>Samuel Pereira </p>
-            <p>Rua Lorem Ipsum, 99. Rio de Janeiro - RJ</p>
-            <p> 21999-999</p>
+            <p>Rua Lorem Ipsum, 99 - Centro. </p>
+            <p>Rio de Janeiro - RJ. 21999-999</p>
             </article>
             </div>
           </div>

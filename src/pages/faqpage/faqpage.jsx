@@ -59,14 +59,11 @@ export const FaqPage = () => {
                   <p>
                     A MiauDota entende o ato como abandono animal,
                     mas podemos inserir seu gato em nosso quadro de adoções até
-                    que você consiga resolver sua situação.
-                  </p>
-                  <br/>
-                  <p>
-                    Em caso de abandono ou da necessidade de devolver o animal previamente
+                    que você consiga resolver sua situação. Em caso de abandono ou da 
+                    necessidade de devolver o animal previamente
                     adotado, nós iremos recebê-lo com a consequência de inserir
                     seu nome em nossa lista de pessoa inconfiável e bloquearemos
-                    seu número de telefone.
+                    seu telefone.
                   </p>
                 </article>
               </div>

@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     top: 0vh;
     display: flex;
     align-items: center;
-    gap: 4vw;
+    gap: 3.5vw;
     left: 15vw;
     height: 7vh;
     padding: 0 0 .5vh 6vw;
@@ -21,7 +21,7 @@ export const StyledHeader = styled.header`
  
     span{
         font-size: 13px;
-        max-width: 30vw;
+        width: 19vw;
         margin-top: 3vh;
         position: relative;
         right: 4vw;

@@ -19,11 +19,14 @@ export const DonateContainer = styled.div`
         grid-template-columns: 1fr 1fr;
         margin-left: 10vw;
         gap: 5vw;
+        margin-top: 4vh;
     }
 
     .banks{
         display: flex;
         align-items: center;
+        max-width: 50vw;
+        padding: 0 2vw 0 2vw;
         justify-content: center;
         gap: 4vw;
         #bank-data{
@@ -33,6 +36,7 @@ export const DonateContainer = styled.div`
 
     .box{   
         position: relative;
+        font-size: 15px;
         top: 3vh;
         width: 35vw;
         display: flex;
@@ -40,7 +44,7 @@ export const DonateContainer = styled.div`
         text-align: center;
         flex-direction: column;
         gap: 1vw;
-        height: 34vh;
+        height: 36vh;
         background-color: #eeeeee;
         h1{
             font-weight: 600;
