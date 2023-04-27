@@ -13,30 +13,58 @@ export const AdoptContainer = styled.div`
         font-size: 2rem;
         font-weight: 700;
     }
+
+    #description{
+        width: 50vw;
+        text-align: justify;
+        font-size: 15px;
+    }
+
     
-    .cards-container{
-        width: 75vw;
-        margin-top: 5vh;
+    #credits{
+        text-align: center;
+        margin-top: 8vh;
+        font-size: 14px;
+    }
+
+    .cat-genres{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8vh;
     }
 
-    .male-cats, .female-cats{
-        display: flex;
-        gap: 3vw;
-    }
-
-    .cat-card{
-        display: flex;
+    .genre-select{
+        padding-top: 8vh;
+        width: 90vw;
+        gap: 15vw;
         align-items: center;
-        flex-direction: column;
-        border: solid 1px black;   
-        width: 10vw;
-        height: 20vh;
+        display: flex;
+        justify-content: center;
         img{
-            width: 8vw;
+            width: 25%;
+            cursor: pointer;
+            :active{
+                transform: scale(0.98);
+            }
         }
     }
+
+    #back{
+        font-weight: 700;
+        cursor: pointer;
+        :hover{text-decoration: underline}
+        position: relative;
+        right: 38.5vw;
+        top: 2vh;
+    }
+
+    .cats-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5vw;
+        padding-top: 3vh;
+        align-items: center;
+        justify-content: center;
+    }
+
 `

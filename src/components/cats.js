@@ -1,4 +1,4 @@
-export const maleCats = [
+export const CatsList = [
     {
         name: "Leão",
         image: "https://tinyurl.com/2up42en6",
@@ -44,31 +44,54 @@ export const maleCats = [
     },
 
     {
-        name: "Querido",
-        image: "https://tinyurl.com/4stmcfuy",
+        name: "Chico",
+        image: "https://tinyurl.com/yah44nww",
         genre: "male",
-        age: "8 meses",
+        age: "1 ano",
+        story: "",
+        local: ""        
+    },
+
+    {
+        name: "Gael",
+        image: "https://tinyurl.com/4njdtead",
+        genre: "male",
+        age: "7 meses",
         story: "",
         local: "" 
-    }
-]
+    },
 
-export const femaleCats = [
+    {
+        name: "Bebezão",
+        image: "https://tinyurl.com/4sfjy2fh",
+        genre: "male",
+        age: "2 anos",
+        story: "",
+        local: "" 
+    },
+
+    {
+        name: "Crispim",
+        image: "https://tinyurl.com/mxpp4c2c",
+        genre: "male",
+        age: "8 meses",
+        local: "" 
+    },
+
+    {
+        name: "Joaquim",
+        image: "https://tinyurl.com/2ttt33e8",
+        genre: "male",
+        age: "6 meses",
+        story: "",
+        local: "" 
+    },
 
     {
         name: "Lilica",
         image: "https://tinyurl.com/2smzp3ps",
         genre: "female",
         age: "4 meses",
-        local: "" 
-    },
-
-    {
-        name: "Rainha",
-        image: "https://tinyurl.com/yc7c9569",
-        genre: "female",
-        age: "2 anos",
-        story: "",
         local: "" 
     },
 
@@ -102,6 +125,50 @@ export const femaleCats = [
     {
         name: "Tieta",
         image: "https://tinyurl.com/4ky26xfd",
+        genre: "female",
+        age: "1 ano",
+        story: "",
+        local: "" 
+    },
+    
+    {
+        name: "Tina",
+        image: "https://tinyurl.com/bdem7uf6",
+        genre: "female",
+        age: "8 meses",
+        local: "" 
+    },
+
+    {
+        name: "Kakau",
+        image: "https://tinyurl.com/yc7hc8vd",
+        genre: "female",
+        age: "1 ano",
+        story: "",
+        local: "" 
+    },
+
+    {
+        name: "Dinorah",
+        image: "https://tinyurl.com/mr387aby",
+        genre: "female",
+        age: "7 meses",
+        story: "",
+        local: "" 
+    },
+
+    {
+        name: "Rainha",
+        image: "https://tinyurl.com/yc7c9569",
+        genre: "female",
+        age: "2 anos",
+        story: "",
+        local: "" 
+    },
+
+    {
+        name: "Maya",
+        image: "https://tinyurl.com/4k7y8vex",
         genre: "female",
         age: "1 ano",
         story: "",

@@ -1,4 +1,4 @@
-import { HeaderForm } from "./StyledForms";
+import { HeaderForm } from "../../../styles/StyledForms"
 
 import {
   Box,

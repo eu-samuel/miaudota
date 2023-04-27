@@ -57,7 +57,6 @@ export const Column = () => {
         <img id="icon" src="https://i.ibb.co/gFq4VFG/catwitter.png"/>
         </div>
         <span>Ícones por <a href="https://www.deviantart.com/therealflamecat/gallery">@TheRealFlameCat</a></span>
-        <span>Projeto criado por Samuel Pereira.</span>
         <span>Rio de Janeiro - RJ.</span>
     </StyledColumn>
   );

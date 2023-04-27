@@ -87,7 +87,7 @@ export const StyledBalloon = styled.div`
     }
 `
 
-export const StyledCard = styled.div`
+export const StyledPost = styled.div`
 
     margin-top: 2vh;
     background: ${props => props.color};
@@ -124,5 +124,30 @@ export const StyledCard = styled.div`
     #text{
         color: ${props => props.textcolor};
         width: 20vw;
+    }
+`
+export const StyledCard = styled.div`
+
+    .card{
+        border: solid 1px #ebe9e9;
+    }
+
+    .sub-container{
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        align-items: center;
+        width: 11vw;
+        gap: 3vw;
+    }
+
+    p{font-weight: 700;}
+
+    button{
+        font-size: 16px;
+        width: 10vw;
+        color: white;
+        background: ${props => props.color};
+        :hover{background: ${props => props.hover};}
+        :active{transform: scale(0.98)}
     }
 `

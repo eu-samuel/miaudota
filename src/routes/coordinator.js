@@ -21,3 +21,4 @@ export const goToContact = (navigate) =>{
 export const goToFaq = (navigate) =>{
     navigate('/faq')
 }
+

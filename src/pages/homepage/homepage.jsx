@@ -3,7 +3,7 @@ import React from "react";
 import { HomeContainer } from "./style";
 import { DefaultPageStyle } from "../../styles/generalStyles";
 import { Posts } from "../../components/Posts";
-import HomeCard from "../../components/UI/Cards/HomeCard";
+import HomePost from "../../components/UI/Cards/HomePost";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export const HomePage = () => {
@@ -14,14 +14,13 @@ export const HomePage = () => {
       <DefaultPageStyle>
         <HomeContainer>
             <div className="posts">
-              {Posts.map((post) => {
+              {Posts.map((post, key) => {
                 return(
                   <>
                 <div id="post">
-                  <HomeCard
+                  <HomePost
                   image={post.image}
                   tag={post.tag}
-                  key={post.tag}
                   text={post.text}
                   route={post.route}
                   title={post.title}

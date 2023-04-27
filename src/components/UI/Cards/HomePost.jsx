@@ -1,9 +1,9 @@
-import { StyledCard } from "../../../styles/secondaryStyles";
+import { StyledPost } from "../../../styles/secondaryStyles";
 import { useColorModeValue } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 
-export default function HomeCard(props) {
+export default function HomePost(props) {
   const navigate = useNavigate()
 
   return (

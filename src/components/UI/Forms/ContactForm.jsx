@@ -1,4 +1,4 @@
-import { ContactForm } from "./StyledForms";
+import { ContactForm } from "../../../styles/StyledForms"
 
 import {
   Flex,
