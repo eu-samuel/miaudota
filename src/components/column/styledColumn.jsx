@@ -82,7 +82,7 @@ export const StyledList = styled.ul`
         cursor: pointer;
         transition: 150ms;
         :hover{
-            width: 18vw;
+            width: 17vw;
         }
         :active{
             transform: scale(0.98);

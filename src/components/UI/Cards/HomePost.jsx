@@ -7,7 +7,7 @@ export default function HomePost(props) {
   const navigate = useNavigate()
 
   return (
-    <StyledCard
+    <StyledPost
     color={useColorModeValue('white', 'gray.900')}
     textcolor={useColorModeValue('#7e7d9b','white')}
     boxcolor={useColorModeValue('#e8e6e7', '#151b25')}>
@@ -18,6 +18,6 @@ export default function HomePost(props) {
     
     <p id="text">{props.text} </p>
       <span onClick={() => props.route(navigate)}>Saiba mais</span></div>
-    </StyledCard>
+    </StyledPost>
   );
 }

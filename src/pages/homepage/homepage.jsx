@@ -14,11 +14,12 @@ export const HomePage = () => {
       <DefaultPageStyle>
         <HomeContainer>
             <div className="posts">
-              {Posts.map((post, key) => {
+              {Posts.map((post, index) => {
                 return(
                   <>
                 <div id="post">
                   <HomePost
+                  key={index}
                   image={post.image}
                   tag={post.tag}
                   text={post.text}

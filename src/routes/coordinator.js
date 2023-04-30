@@ -10,6 +10,14 @@ export const goToAdopt = (navigate) =>{
     navigate('/adote')
 }
 
+export const goToMale = (navigate) => {
+    navigate('/adote/machos')
+}
+
+export const goToFemale = (navigate) => {
+    navigate('/adote/femeas')
+}
+
 export const goToDonate = (navigate) =>{
     navigate('/contribua')
 }

@@ -3,6 +3,13 @@ import { StyledCard } from '../../../styles/secondaryStyles'
 
 export const CatCard = (props) => {
 
+  const [modelCat, setModelCat, showCat, setShowCat] = props.content
+
+  const adoptCat = () => {
+      setModelCat(props.cat)
+      setShowCat(true)
+  }
+
 return (
   <StyledCard
   color={props.color}
@@ -13,16 +20,16 @@ return (
     maxH="35vh">
   <CardBody>
     <Image
-      src={props.image}
-      alt={props.name}
+      src={props.cat.image}
+      alt={props.cat.name}
       borderRadius='lg'
       w="100%"
     />
     <Stack mt='5' spacing='3'>
       <div className="sub-container">
-      <p id="name">{props.name}</p>
-      <Button variant='solid'>
-        Adote
+      <p id="name">{props.cat.name}</p>
+      <Button onClick={() => adoptCat()}variant='solid'>
+        Sobre
       </Button>
       </div>
       </Stack>

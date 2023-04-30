@@ -8,6 +8,18 @@ export const AdoptContainer = styled.div`
     align-items: center;
     justify-content: center;
 
+    .page-on{
+        position: relative;
+        top: 1vh;
+        opacity: 1;
+        transition: 200ms;
+    }
+
+    .page-off{
+        opacity: 0;
+        transition: 200ms;
+    }
+
     h1{
         font-family: "Montserrat", sans-serif;
         font-size: 2rem;
@@ -15,7 +27,7 @@ export const AdoptContainer = styled.div`
     }
 
     #description{
-        width: 50vw;
+        width: 46vw;
         text-align: justify;
         font-size: 15px;
     }
@@ -59,8 +71,8 @@ export const AdoptContainer = styled.div`
     }
 
     .cats-container{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         gap: 2.5vw;
         padding-top: 3vh;
         align-items: center;

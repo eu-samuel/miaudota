@@ -14,7 +14,7 @@ export const AboutPage = () => {
         <div className="article">
         <h1>O que é a MiauDota?</h1>
           <article>
-          MiauDota é uma organização sem fins lucrativos voltada para a causa animal, tendo sua sede localizada no centro da cidade do Rio de Janeiro. 
+          A MiauDota é uma organização sem fins lucrativos, tendo sua sede localizada no centro da cidade do Rio de Janeiro. 
           Nosso trabalho é centralizado nos cuidados de abrigar, resgatar e disponibilizar para adoção gatos em situação de rua, abandono e maus tratos.
           </article>
           
@@ -29,7 +29,8 @@ export const AboutPage = () => {
             </article>
 
             <article>
-            Fornecemos todo o auxílio possível para que nossas pessoas voluntárias consigam seguir em frente com os lares. No entanto, contamos com doações como forma de contribuir com o sucesso do nosso trabalho.
+            No momento, você está nos conhecendo através de nosso espaço virtual, aonde exibimos os animais que estão em urgência de adoção em um ambiente de maior alcance. 
+            Confira nossa página de adoções no menu ao lado para saber mais.
             </article>
           </div>
           <div className="main-img">

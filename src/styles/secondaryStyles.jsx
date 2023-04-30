@@ -21,6 +21,8 @@ export const HeaderButton = styled.button`
     width: 7vw;
     height: 2vh;
     padding: 1rem .5rem;
+    position: relative;
+    top: .2vh;
     font-weight: 600;
     margin-left: 19.5vw;
     display: flex;
