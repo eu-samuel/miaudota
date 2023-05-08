@@ -1,5 +1,4 @@
-import { ContactForm } from "../../../styles/StyledForms"
-
+import { ContactForm } from "./StyledForms"
 import {
   Flex,
   Box,
@@ -18,111 +17,114 @@ import {
   Textarea,
   useColorModeValue
 } from "@chakra-ui/react";
-
 import { RiWhatsappFill } from 'react-icons/ri'
 import * as MdIcons from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
+import useForm from './../../hooks/useForm';
 
-export default function Contact() {
+export default function Contact(props) {
+
+  const { form, onChange, clearInputs } = useForm({
+    name: "",
+    email: "",
+    select: "",
+    message: "",
+  });
+
+  const sendMessage = () => {
+    clearInputs()
+    props.setForm(false)
+  }
+
   return (
     <ContactForm>
     <Flex>
       <Box
-        className="box"
         color="black"
         borderRadius="lg"
-        m={{ sm: 4, md: 16, lg: 10 }}
-        p={{ sm: 5, md: 5, lg: 26 }}
+        m={{ sm: 3, md: 3, lg: 1 }}
+        p={{ sm: 3, md: 3, lg: 6 }}
       >
-        <Box p={2}>
-          <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+        <Box p={1}>
+          <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 10 }}>
             <WrapItem>
               <Box>
-                <div>
-                <Heading
+              <div className="resources">
+                <div><Heading
+                w="100"
                 color={useColorModeValue("black", 'white')}>Fale conosco</Heading>
-                <Text mt={{ sm: 3, md: 3, lg: 5 }} color={useColorModeValue("gray.500", 'white')}>
-                  <p>Nos mande uma mensagem diretamente.</p> Você também pode entrar em contato <p>por whatsapp ou email.</p>
+                <Text id="text" mt={{ sm: 3, md: 3, lg: 5 }} color={useColorModeValue("gray.500", 'white')}>
+                  <p>Nos mande uma mensagem diretamente </p>
+                  <p>ou pelo whatsapp.</p>
                 </Text>
-                <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
+                </div>
+                <Box color={useColorModeValue("black", "white")}
+                py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                   <VStack pl={0} spacing={3} alignItems="flex-start">
-                    <Button
-                      size="md"
-                      height="48px"
-                      width="200px"
-                      variant="ghost"
-                      color={useColorModeValue("black", 'white')}
-                      _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<RiWhatsappFill color="#f35f29" size="20px" />}
-                    >
+                    </VStack>
+                    <div id="icon">
+                      <RiWhatsappFill color="#f35f29" size="20px" />
                      (21) 99999-9999
-                    </Button>
-                    <Button
-                      size="md"
-                      height="48px"
-                      width="200px"
-                      variant="ghost"
-                      color={useColorModeValue("black", 'white')}
-                      _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<MdIcons.MdEmail color="#f35f29" size="20px" />}
-                    >
+                     </div>
+                     <div id="icon">
+                      <MdIcons.MdEmail color="#f35f29" size="20px" />
                       miaudota@email.com
-                    </Button>
-                    <Button
-                      size="md"
-                      height="48px"
-                      width="200px"
-                      variant="ghost"
-                      color={useColorModeValue("black", 'white')}
-                      _hover={{ border: "2px solid #1C6FEB" }}
-                      leftIcon={<MdIcons.MdLocationOn color="#f35f29" size="20px" />}
-                    >
+                      </div>
+                      <div id="icon">
+                        <MdIcons.MdLocationOn color="#f35f29" size="20px" />
                       Rio de Janeiro - RJ
-                    </Button>
-                  </VStack>
+                      </div>
                 </Box>
                 </div>
               </Box>
-            </WrapItem>
+              </WrapItem>
+              <div className="form">
             <WrapItem>
-            <div>
               <Box bg={useColorModeValue("white", "")} borderRadius="lg">
                 <Box m={1} color={useColorModeValue("#0B0E3F", "white")}>
                   <VStack spacing={5}>
-                    <FormControl id="name">
+                    <FormControl id="area">
                       <FormLabel>Seu nome</FormLabel>
                       <InputGroup borderColor="#E0E1E7">
                         <InputLeftElement
                           pointerEvents="none"
                           children={<BsPerson color="gray.800" />}
                         />
-                        <Input type="text" size="md" />
+                        <Input type="text" name="name" value={form.name} onChange={onChange} required size="md" />
                       </InputGroup>
                     </FormControl>
-                    <FormControl id="name">
+                    <FormControl id="area">
                       <FormLabel>Seu e-mail</FormLabel>
                       <InputGroup borderColor="#E0E1E7">
                         <InputLeftElement
                           pointerEvents="none"
-                          children={<MdIcons.MdOutlineEmail color="gray.800" />}
+                          children={<MdIcons.MdOutlineEmail id="mail" color="gray.800" />}
                         />
-                        <Input type="text" size="ml" h="4vh" w="22vw" />
+                        <Input type="text" name="email" value={form.email} onChange={onChange} required size="ml" h="4vh" w="22vw" />
                       </InputGroup>
                     </FormControl>
-                    <FormControl id="name">
+                    <FormControl id="area">
                       <FormLabel>Assunto</FormLabel>
-                      <Select
+                      <Select 
+                      value={form.select} 
+                      name="select" 
+                      onChange={onChange}
+                      required 
                         h={7}>
                         <option value="null">Escolha um assunto</option>
-                        <option value="reclamação">Voluntariado (deixar telefone para contato)</option>
-                        <option value="resgate">Contribuições</option>
-                        <option value="informação">Reclamações</option>
-                        <option value="denúncia">Denúncias</option>
+                        <option value="voluntariado">Voluntariado (deixar telefone para contato)</option>
+                        <option value="doacao">Doações</option>
+                        <option value="reclamacao">Reclamações</option>
+                        <option value="denuncia">Denúncias</option>
                       </Select>
                     </FormControl>
-                    <FormControl id="name">
+                    <FormControl id="area">
                       <FormLabel>Mensagem</FormLabel>
                       <Textarea
+                        value={form.message}
+                        onChange={onChange}
+                        required 
+                        name="message"  
                         borderColor="gray.300"
                         h="20vh"
                         w="22vw"
@@ -134,6 +136,7 @@ export default function Contact() {
                     </FormControl>
                     <FormControl id="name" float="right">
                       <Button
+                         onClick={() => sendMessage()}
                         variant="solid"
                         bg="#f35f29"
                         color="white"
@@ -145,12 +148,11 @@ export default function Contact() {
                   </VStack>
                 </Box>
               </Box>
-              </div>
             </WrapItem>
+            </div>
           </Wrap>
         </Box>
-        <img id="catcontact" src="https://i.ibb.co/7rwTVpV/catform.png"/>
-      </Box>
+        </Box>
     </Flex>
     </ContactForm>
   );

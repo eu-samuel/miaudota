@@ -46,4 +46,48 @@ export const FaqContainer = styled.div`
         width: 30vw;
         margin-top: 1vh;
     }
+
+    
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+
+        width: 100vw;  
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 5vh;
+        font-size: 15px;
+        gap: 2vh;
+        justify-content: center;
+
+    
+    h1{text-align: center;}
+
+    #cat-doubts{display: none;}
+
+    .faq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        text-align: justify;
+        gap: 5vw;
+    }
+
+    .first-questions, .later-questions{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .later-questions{
+        padding-bottom: 5vh;
+    }
+
+    article{
+        width: 90vw;
+        margin-top: 1vh;
+    }
+
+    
+    }
 `

@@ -12,7 +12,7 @@ export const StyledColumn = styled.section`
 
     .social-media{
         display: flex;
-        padding: 3vh 0 2vh 0;
+        padding: 4vh 0 2vh 0;
         gap: 1vw;
         height: 2vh;
         align-items: center;
@@ -28,7 +28,8 @@ export const StyledColumn = styled.section`
 
     span{
         position: relative;
-        top: 2vh;
+        top: 3vh;
+        line-height: 3vh;
         font-size: 12px;
     }
 
@@ -42,7 +43,11 @@ export const StyledColumn = styled.section`
     h2{
         font-family: "Poppins", "Montserrat", sans-serif;
         font-size: 20px;
-        margin-top: 2vh;
+        margin-top: 5vh;
+    }
+
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+        display: none;
     }
 
 `
@@ -52,7 +57,7 @@ export const StyledList = styled.ul`
     list-style: none;
     position: relative;
     left: -.3vw;
-    margin-top: 7vh;
+    margin-top: 13vh;
     display: flex;
     flex-direction: column;
     gap: 4.5vh;
@@ -87,6 +92,11 @@ export const StyledList = styled.ul`
         :active{
             transform: scale(0.98);
         }
+    }
+
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+
+       display: none;
     }
 
 

@@ -1,6 +1,6 @@
 import { Header } from "../../components/header/header";
 import React, {useState} from "react";
-import { DefaultPageStyle } from "../../styles/generalStyles";
+import { DefaultPageStyle } from "../../components/secondaryStyles";
 import { AdoptContainer} from "./style";
 import { ChakraProvider } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,7 @@ export const AdoptPage = () => {
         sexo ou idade. A nossa lista de gatinhos é atualizada a cada quinzena ou a medida em que são adotados.
       </p>
       <div className="genre-select">
-        <img src="https://i.ibb.co/jhCZxKf/image.png" alt="male-cats" onClick={() => goToMale(navigate)} />
+        <img src="https://i.ibb.co/djmhwLx/image.png" alt="male-cats" onClick={() => goToMale(navigate)} />
         <img src="https://i.ibb.co/cDL4QQ6/image.png" alt="female-cats" onClick={() => goToFemale(navigate)}/>
       </div>
 
@@ -42,7 +42,4 @@ export const AdoptPage = () => {
   );
 };
 
-      {/* <CatPage 
-        showPage={showPage}
-        setShowPage={setShowPage}
-        cat={modelCat}/> */}
+  

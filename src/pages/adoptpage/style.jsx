@@ -8,18 +8,6 @@ export const AdoptContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    .page-on{
-        position: relative;
-        top: 1vh;
-        opacity: 1;
-        transition: 200ms;
-    }
-
-    .page-off{
-        opacity: 0;
-        transition: 200ms;
-    }
-
     h1{
         font-family: "Montserrat", sans-serif;
         font-size: 2rem;
@@ -55,28 +43,48 @@ export const AdoptContainer = styled.div`
         img{
             width: 25%;
             cursor: pointer;
-            :active{
-                transform: scale(0.98);
-            }
+            :active{transform: scale(0.98);}
         }
     }
 
-    #back{
-        font-weight: 700;
-        cursor: pointer;
-        :hover{text-decoration: underline}
+
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+    
+        width: 100vw;
         position: relative;
-        right: 38.5vw;
-        top: 2vh;
-    }
+        top: 10vh;
+    
+        #credits{
+            text-align: center;
+            margin-top: 6vh;
+            width: 70vw;
+            font-size: 14px;
+        }
 
-    .cats-container{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 2.5vw;
-        padding-top: 3vh;
-        align-items: center;
-        justify-content: center;
-    }
 
+        h1{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        #description{
+            width: 80vw;
+            text-align: justify;
+            font-size: 15px;
+            margin-top: 2vh;
+        }
+
+
+        .genre-select{
+            padding-top: 5vh;
+            width: 90vw;
+            gap: 15vw;
+            img{
+                width: 40%;
+                cursor: pointer;
+                :active{transform: scale(0.98);}
+            }
+        }
+
+    }
 `

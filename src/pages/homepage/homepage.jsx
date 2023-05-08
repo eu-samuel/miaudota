@@ -1,10 +1,10 @@
 import { Header } from "../../components/header/header";
 import React from "react";
 import { HomeContainer } from "./style";
-import { DefaultPageStyle } from "../../styles/generalStyles";
+import { DefaultPageStyle } from "../../components/SecondaryStyles";
 import { Posts } from "../../components/Posts";
-import HomePost from "../../components/UI/Cards/HomePost";
 import { ChakraProvider } from "@chakra-ui/react";
+import HomePost from './../../components/Cards/HomePost';
 
 export const HomePage = () => {
 
@@ -14,12 +14,12 @@ export const HomePage = () => {
       <DefaultPageStyle>
         <HomeContainer>
             <div className="posts">
-              {Posts.map((post, index) => {
+              {Posts.map((post, key) => {
                 return(
                   <>
                 <div id="post">
                   <HomePost
-                  key={index}
+                  key={key}
                   image={post.image}
                   tag={post.tag}
                   text={post.text}

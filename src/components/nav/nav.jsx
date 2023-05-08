@@ -1,16 +1,15 @@
-import { StyledColumn, StyledList } from "./StyledColumn";
+import { StyledNav } from "./StyledNav";
 import { useNavigate } from "react-router-dom";
 import { goToHome, goToAbout, goToAdopt, goToFaq, goToDonate } from "../../routes/coordinator";
 
-export const Column = () => {
+export const Nav = (props) => {
 
   const navigate = useNavigate()
 
   return (
-    <StyledColumn>
-      <StyledList>
-
-      <li>
+    <StyledNav>
+      <div className={props.nav === true ? "nav-on" : "nav-off"}>
+        <li>
         <button onClick={() => goToHome(navigate)}>
             <img id="nav-img" src="https://i.ibb.co/Dw786kN/nav0.png" />
             Principal
@@ -43,7 +42,6 @@ export const Column = () => {
             FAQ
           </button>
         </li>
-      </StyledList>
       <h2>Nossas mídias sociais</h2>
         <div className="social-media">
         <img id="icon" src="https://i.ibb.co/sCRgMwm/catagram.png"/>
@@ -52,6 +50,7 @@ export const Column = () => {
         </div>
         <span>Ícones por <a href="https://www.deviantart.com/therealflamecat/gallery">@TheRealFlameCat</a></span>
         <span>Rio de Janeiro - RJ.</span>
-    </StyledColumn>
+        </div>
+    </StyledNav>
   );
 };

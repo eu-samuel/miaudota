@@ -1,7 +1,7 @@
 import { Header } from "../../components/header/header";
 import React from "react";
 import { FaqContainer } from "./style";
-import { DefaultPageStyle } from "../../styles/generalStyles";
+import { DefaultPageStyle } from "../../components/secondaryStyles";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export const FaqPage = () => {

@@ -1,14 +1,13 @@
 import React from "react";
 import { Header } from "../../components/header/header";
 import { ChakraProvider } from "@chakra-ui/react";
-import { DefaultPageStyle } from "../../styles/generalStyles";
-import { CatCard } from "../../components/UI/Cards/CatCard";
-import { CatPage } from "./catpage";
-import { AdoptContainer } from "../adoptpage/style";
+import { DefaultPageStyle } from "../../components/SecondaryStyles";
+import { CatCard } from "../../components/Cards/CatCard";
+import { goToAdopt } from "../../routes/coordinator";
+import { CatsContainer } from "./CatsContainer";
 import { useNavigate } from "react-router-dom";
 
 export const MalePage = (props) => {
-  const [modelCat, setModelCat, showCat, setShowCat, backToAdopt] = props.content
   const maleCats = props.CatsList.filter(cat => cat.genre === "male")
   const navigate = useNavigate()
 
@@ -16,19 +15,9 @@ export const MalePage = (props) => {
     <ChakraProvider>
     <Header/>
     <DefaultPageStyle>
-      <AdoptContainer>
-      {showCat == false && <p id="back" onClick={() => backToAdopt(navigate)}>Voltar</p>}
-    {showCat && 
-    <CatPage 
-    cat={modelCat}
-    showCat={showCat}
-    setShowCat={setShowCat}
-    color="#0099CC"
-    />}
-
-
-    <div className={showCat === false ? "page-on" : "page-off"}>
-    <div className="cats-container"> 
+      <CatsContainer>
+      <p id="back" onClick={() => goToAdopt(navigate)}>Voltar</p>
+        <div className="main-container">
     {maleCats.map((cat, index) => {
       return(
         <CatCard
@@ -41,10 +30,9 @@ export const MalePage = (props) => {
       )
     })}
     </div>
-    </div>
-
-    </AdoptContainer>
-    </DefaultPageStyle>
+    <p id="credits">Nomes fictícios, todas as imagens foram retiradas do catálogo da <a href="https://www.patinhascarentes.org/gatos-para-adocao">Ong Patinhas Carentes.</a></p>
+    </CatsContainer>
+     </DefaultPageStyle>
     </ChakraProvider>
   );
 };

@@ -1,5 +1,4 @@
 import { Button, Flex, useColorMode } from '@chakra-ui/react';
-import { BsSun, BsMoonStarsFill } from 'react-icons/bs';
 
 export default function DarkModeButton() {
   const { colorMode, toggleColorMode } = useColorMode();

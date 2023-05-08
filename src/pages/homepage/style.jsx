@@ -23,4 +23,19 @@ export const HomeContainer = styled.div`
         :hover{text-decoration: underline}
     }
 
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+     
+        width: 100vw;    
+        display: flex;
+        align-items: flex-start;
+    
+    .posts{
+        margin-top: 5vh;
+        width: 95vw;
+        gap: 2vw;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    }
 `

@@ -1,6 +1,6 @@
-import { StyledPost } from "../../../styles/secondaryStyles";
 import { useColorModeValue } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { StyledPost } from "../secondaryStyles";
 
 
 export default function HomePost(props) {

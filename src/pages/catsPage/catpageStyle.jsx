@@ -4,39 +4,22 @@ export const CatPageStyle = styled.div`
 
     width: 100vw;
     display: flex;
-    justify-content: center;
 
-
-    .modal-on{
-        position: absolute;
-        top: -10vh;
+    .cat-container{
+        margin-top: 2vh;
         width: 85vw;
-        padding: 2vh 2vw 2vh 2vw;
         height: 75vh;
         display: flex;
         flex-direction: column;
-        opacity: 1;
-        z-index: 1;
-        transition: 200ms;
-    }
-
-    .modal-off{
-        position: absolute;
-        top: 10vh;
-        width: 85vw;
-        padding: 2vh 2vw 2vh 2.5vw;
-        height: 75vh;
-        display: flex;
-        opacity: 0;
-        transform: 200ms;
+        color:${props => props.textcolor};
+        font-family: "Montserrat", sans-serif;
     }
 
     #name{
-        font-family: "Montserrat", sans-serif;
         text-align: center;
         position: relative;
+        top: -1vh;
         color: ${props => props.color};
-        top: -2vh;
         font-size: 4vw; 
         font-weight: 700;
     }
@@ -46,22 +29,92 @@ export const CatPageStyle = styled.div`
         display: flex;
         gap: 3vw;
         img{
-        width: 31%;
+        width: 26%;
+        border: solid 10px ${props => props.color};
+        } 
+        p{font-size: 15px;}
     }
 
-    }
     #close{
         position: absolute;
-        top: -1vh;
-        font-family: "Montserrat", sans-serif;
+        top: 2vh;
         cursor: pointer;
         left: 78vw;
-        z-index: 1;
-        font-weight: 350;
-        color: ${props => props.color};
-        font-size: 3vw;
-        :active{
-            transform: scale(0.85);
-        }
+        color:  ${props => props.color};
+        width: 2.5vw;
+        text-align: center;
+        font-size: 1.5vw;
+        :active{transform: scale(0.9);}
     }
+
+    article{
+        padding: 3vh 0 3vh 0;
+        width: 36vw;
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    #adoption{
+        width: 34vw;
+        padding-left: 2vw;
+        text-align: center;
+        color: ${props => props.color};
+        font-weight: 700;
+    }
+
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+    
+    .cat-container{
+        margin-top: 0;
+        gap: 1vh;
+        width: 95vw;
+        height: 100vh;
+    }
+
+    #name{
+        top: 0;
+        margin-top: 6vh;
+        font-size: 8vw; 
+    }
+    
+    .cat-info{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        img{width: 90%;}
+        p{font-size: 16px;}
+
+    }
+
+    #close{
+        top: 4vh;
+        width: 8vw;
+        font-size: 3.5vw;
+    }
+
+    article{
+        padding: 0;
+        width: 85vw;
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    #adoption{
+        width: 85vw;
+        padding-left: 0;
+        margin-top: 2vh;
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 4vh;
+    }
+
+
+    }
+
 `
