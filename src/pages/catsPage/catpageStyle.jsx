@@ -6,7 +6,6 @@ export const CatPageStyle = styled.div`
     display: flex;
 
     .cat-container{
-        margin-top: 2vh;
         width: 85vw;
         height: 75vh;
         display: flex;
@@ -36,12 +35,14 @@ export const CatPageStyle = styled.div`
     }
 
     #close{
-        position: absolute;
-        top: 2vh;
+        position: relative;
+        top: 1vh;
         cursor: pointer;
         left: 78vw;
         color:  ${props => props.color};
-        width: 2.5vw;
+        width: 3.5vw;
+        border-radius: 50px;
+        height: 6vh;
         text-align: center;
         font-size: 1.5vw;
         :active{transform: scale(0.9);}
