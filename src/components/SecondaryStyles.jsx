@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useColorModeValue } from '@chakra-ui/react';
 
 export const DefaultPageStyle = styled.section`
 
@@ -214,13 +215,13 @@ export const StyledCard = styled.div`
         font-family: "Montserrat", sans-serif;
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: {useColorModeValue("white", #1A202C)};
         gap: 2vh;
         align-items: center;
         width: 14vw;
         height: 35vh;
         padding: .5rem;
-        border: solid 1px #dad7d7;
+        border: solid 1px {useColorModeValue("#dad7d7", #1A202C)};
         border-radius: 8px;
         img{
             width: 95%;
