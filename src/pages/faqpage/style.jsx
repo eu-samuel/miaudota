@@ -76,6 +76,10 @@ export const FaqContainer = styled.div`
     .first-questions, .later-questions{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: 80vw;
+        padding-left: 2vw;
         gap: 2vh;
     }
 

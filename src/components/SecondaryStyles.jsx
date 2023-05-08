@@ -106,6 +106,7 @@ export const StyledBalloon = styled.div`
     .balloon-on {
         width: 100vw;
         max-height: 120vh;
+        top: 6vh;
         left: 0vw;
         border-radius: 0;
     }

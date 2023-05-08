@@ -60,27 +60,29 @@ export const AboutContainer = styled.div`
         top: 3vh;
         img{
             position: relative;
-            top: -75vh;
+            top: -109vh;
             max-width: 90vw;}
         p{
             margin-left: 0;
             font-size: 12px;
             position: relative;
-            top: -72vh;
+            top: -107vh;
         }
     }
 
     .article{
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 2vh;
-        margin-top: 4vh;
+        margin-top: 2vh;
     }
 
     article{
         position: relative;
         text-align: justify;
-        top: 43vh;
+        top: 38vh;
+        right: 2vw;
         max-width: 80vw;
     }
     h1{text-align: center;}
