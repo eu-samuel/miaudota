@@ -32,4 +32,4 @@ Em sua versão padrão/desktop, toda a navegação do projeto é feita através 
 
 <h1>Deploy</h1>
 
-Para acessar o projeto, utilize o link de deploy miaudota.surge.sh
+Para acessar o projeto, utilize o link de deploy https://miaudota.surge.sh
