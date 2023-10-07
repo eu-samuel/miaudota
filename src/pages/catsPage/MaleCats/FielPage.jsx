@@ -6,7 +6,6 @@ import { goToMale } from "../../../routes/coordinator";
 import { useNavigate } from "react-router-dom";
 import { CatsList } from "../../../components/cats";
 import { CloseButton } from '@chakra-ui/react';
-import { MenuStyle } from './../../../../../labestore-astrofashion/labestore-astrofashion/src/components/Menu/menuStyle';
 
 export const FielPage = () => {
   const navigate = useNavigate()
